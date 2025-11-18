@@ -1,0 +1,807 @@
+/* ------------------- Global Variables ------------------- */
+:root {
+    --sm-font: 'Poppins', sans-serif;
+    --lg-font: 'Poppins', sans-serif;
+    --pink: #efefef;
+    --primary-bg: rgba(179, 179, 179, 0.05);
+}
+
+/* ------------------- General Styles ------------------- */
+body {
+   
+    font-family: var(--sm-font), Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #555;
+}
+
+/* Font Styles */
+/* -------------FONT----------------- */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  /*-------------------FONTT-----------------*/
+
+.btn:hover {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* Navbar */
+/* Navbar biasa */
+.navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Pastikan navbar terlihat dengan latar belakang */
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+/* Tambahkan kelas untuk sticky */
+.navbar.sticky {
+    position: fixed; /* Menjadikan navbar tetap berada di atas halaman saat scroll */
+    z-index: 1000; /* Pastikan navbar tetap berada di atas konten */
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+/* Header */
+#header {
+    background: url(assets/img/banner-img-1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/* Title */
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* About Section */
+#about {
+    background-color: var(--primary-bg);
+    padding: 50px 0;
+}
+
+#about h2 {
+    font-family: "Poppins", sans-serif;
+    color: #2D3250;
+}
+
+#about p {
+    font-family: var(--sm-font);
+    line-height: 1.8;
+    color: #555;
+}
+
+#about .btn {
+    background-color: #2D3250;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#about .btn:hover {
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+
+/* Newsletter */
+#newsletter {
+    background-color: var(--primary-bg);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#newsletter p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-family: var(--sm-font);
+    color: #555;
+}
+
+#newsletter .input-group {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#newsletter .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#newsletter .btn {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+#newsletter .btn:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+/* Footer */
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--pink) !important;
+}
+
+/* ------------------- Responsive Design ------------------- */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 8px 0;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background-color: #2D3250;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown-menu {
+        position: static;
+        min-width: 100%;
+        box-shadow: none;
+    }
+
+    #about h2 {
+        font-size: 1.8rem;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+
+    #header {
+        height: 80vh;
+    }
+}
+
+/* title */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+
+/* Tombol yang aktif */
+.filter-button-group .active-filter-btn {
+    background-color: #F9B17A !important; /* Ubah sesuai warna latar belakang yang Anda inginkan */
+    color: #ffffff !important; /* Ubah warna teks saat aktif */
+    border-radius: 25px !important; /* Border radius */
+    font-weight: bold !important;
+}
+
+/* Tombol yang tidak aktif */
+.filter-button-group button {
+    background-color: #d1d9fe !important; /* Warna latar belakang tombol tidak aktif */
+    color: #2D3250 !important; /* Warna teks */
+    border: 2px solid #F9B17A !important; /* Border untuk tombol */
+    border-radius: 25px !important;
+    font-weight: normal !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+/* Efek hover pada tombol */
+.filter-button-group button:hover {
+    background-color: #F9B17A !important; /* Warna latar belakang saat hover */
+    color: #fff !important; /* Warna teks saat hover */
+}
+
+  
+  
+  
+
+/* Mengubah warna background dan teks untuk elemen dengan class "sale" */
+    .collection-img img {
+        width: 100%; /* Membuat gambar memenuhi lebar kontainer */
+        height: 100%; /* Memastikan gambar mengisi seluruh tinggi kontainer */
+        object-fit: contain; /* Agar gambar tidak terpotong dan tetap proporsional */
+    }
+    
+    .collection-img {
+        position: relative;
+        height: 300px; /* Tentukan tinggi yang tetap untuk gambar */
+        overflow: hidden; /* Menyembunyikan bagian gambar yang meluap */
+        border-radius: 8px; /* Opsional: Menambahkan border radius untuk sudut gambar */
+    }
+    
+  
+
+
+  
+  
+  
+
+/* Animasi latar belakang untuk elemen h2 (New Collection) */
+/* Styling untuk bagian judul dengan garis vertikal di sebelahnya */
+
+.title h2 {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px; /* Memberi ruang pada sisi kiri teks agar tidak menempel pada garis */
+    font-size: 2rem;
+    line-height: 1.5; /* Menyesuaikan agar tinggi teks dan garis vertikal sejajar */
+  }
+  
+  /* Garis vertikal di sebel kiri judul */
+  .title h2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); /* Memastikan garis berada di tengah vertikal */
+    height: 100%;
+    width: 4px; /* Ketebalan garis */
+    background-color: #F9B17A; /* Ganti dengan warna yang Anda inginkan */
+    border-radius: 2px; /* Agar garis lebih halus */
+  }
+  
+  
+  .title h2.active-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Warna latar belakang saat animasi */
+    border-radius: 8px;
+    animation: backgroundFade 0.5s ease-out forwards;
+  }
+  
+  @keyframes backgroundFade {
+    0% {
+      background-color: rgba(255, 165, 0, 0);
+    }
+    100% {
+      background-color: rgba(255, 165, 0, 0.3);
+    }
+  }
+
+  .collection-img img {
+    width: 90%; /* Kurangi ukuran gambar sedikit */
+    height: auto; /* Jaga proporsi asli gambar */
+    display: block; /* Hilangkan space bawaan inline */
+    margin: 0 auto; /* Ratakan gambar ke tengah */
+    border-radius: 8px; /* Tambahkan sudut melengkung untuk estetika */
+    object-fit: contain; /* Pastikan seluruh gambar terlihat */
+    aspect-ratio: 4 / 3; /* Jaga rasio gambar tetap seragam */
+}
+
+.collection-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Pastikan area tetap rapi */
+    padding: 10px; /* Beri ruang di sekitar gambar */
+    background-color: #ecefff; /* Tambahkan latar belakang untuk harmoni */
+    border: 1px solid #eee; /* Garis tipis untuk pembatas */
+    border-radius: 10px; /* Sesuaikan sudut dengan gambar */
+}
+
+
+
+
+/* special */
+.special-img {
+  position: relative; /* Menambahkan position relative untuk span */
+  overflow: hidden;
+  height: 500px; /* Sesuaikan tinggi gambar */
+}
+
+.special-img span {
+  position: absolute; /* Letakkan span di sudut */
+  top: 20px;
+  right: 20px;
+  color: white;
+  z-index: 1; /* Pastikan icon berada di atas gambar */
+}
+
+.special-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Agar gambar mengisi kontainer tanpa terdistorsi */
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.special-img:hover img {
+  transform: scale(1.1); /* Perbesar gambar saat hover */
+}
+
+.special-list .btn {
+  padding: 8px 20px !important; /* Sesuaikan ukuran tombol */
+}
+
+/* Mengubah warna dasar tombol */
+.special-list .btn {
+  padding: 8px 20px !important;
+  border-radius: 30px; /* Membuat tombol lebih bulat */
+  background-color: #d1d9fe; /* Mengubah warna dasar tombol menjadi warna yang diinginkan */
+  color: #2D3250; /* Menyesuaikan warna teks */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: 2px solid #F9B17A; /* Mengubah warna border menjadi warna yang sama dengan latar belakang tombol */
+}
+
+/* Hover effect untuk tombol */
+.special-list .btn:hover {
+  background-color: #F6A47A; /* Warna latar belakang tombol saat hover */
+  color: white; /* Mengubah warna teks menjadi putih saat hover */
+  border-color: #F6A47A; /* Mengubah warna border saat hover */
+}
+
+/* offers */
+#offers{
+  background: url(assets/img/frrame2.jpg) center/cover no-repeat;
+}
+#offers .row{
+  min-height: 100vh;
+}
+.offers-content span{
+  font-size: 28px;
+}
+.offers-content h2{
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+}
+.offers-content .btn{
+  border-color: transparent!important;
+}
+
+
+
+/* Warna default tombol */
+.offers-content .btn {
+  background-color: #ffffff; /* Warna latar belakang tombol */
+  color: #F9B17A; /* Warna teks tombol */
+  border: 2px solid #ffffff; /* Warna border tombol */
+  border-radius: 30px; /* Membuat tombol lebih bulat */
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Warna tombol saat hover */
+.offers-content .btn:hover {
+  background-color: #F6A47A; /* Warna latar belakang saat hover */
+  color: #ffffff; /* Warna teks saat hover */
+  border-color: #F6A47A; /* Warna border saat hover */
+}
+
+
+
+/* Efek hover pada tombol dengan nama kelas yang lebih spesifik */
+.custom-btn-hover {
+    display: inline-block;
+    background-color: #2d3250c5; /* Warna background awal */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.0rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+#contact {
+  padding: 50px;
+  text-align: center;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact form div {
+  margin-bottom: 15px;
+}
+
+#contact form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+
+section.contact-page {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Warna latar belakang yang netral */
+}
+
+.contact-container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.contact-left {
+  background-color: #2D3250; /* Biru gelap */
+  color: white;
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.contact-left h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: inherit; /* Warna mengikuti warna teks di sekitarnya */
+  text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.contact-info a:hover {
+  color: #F9B17A; /* Warna oranye terang saat hover */
+}
+
+.contact-info span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-info svg {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #F9B17A; /* Warna oranye untuk ikon */
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #FF8C00; /* Warna oranye cerah saat hover */
+}
+
+.contact-right {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.contact-form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form-group label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* optional: set font weight */
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form-group textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+.contact-btn {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  padding: 12px 24px;
+  color: white;
+  background-color: #F9B17A; /* Oranye terang untuk tombol */
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-btn:hover {
+  background-color: #FF8C00; /* Oranye cerah saat hover */
+}
+
+.contact-footer {
+  margin-top: 10px;
+  color: #888;
+  font-size: 12px;
+}
+
+.contact-map {
+  margin-top: 20px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+}
+
+
+
+
+
+.footer-container {
+  /* Gaya untuk keseluruhan container footer */
+  background-color: #2D3250;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  justify-content: space-between; /* Menempatkan elemen secara horizontal */
+  align-items: center; /* Menyejajarkan elemen secara vertikal */
+}
+
+.footer-section {
+  /* Menghapus properti yang tidak diperlukan */
+  flex: 1; /* Memberikan fleksibilitas pada setiap section */
+  text-align: left;
+}
+
+/* Gaya khusus untuk bagian Useful Links */
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.useful-links li{
+  margin-bottom: 5px;
+}
+
+.useful-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Gaya khusus untuk bagian Contact Us */
+/* .contact_us {
+  
+} */
+
+.copyright {
+  /* Gaya untuk bagian copyright */
+  margin-top: 20px;
+  font-size: 14px;}
+/* testing */
+
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+
+.member-section .form-control {
+    border: 2px solid #FFC8A2;
+    transition: 0.3s ease;
+}
+
+.member-section .form-control:focus {
+    border-color: #2D3250;
+    box-shadow: 0 0 5px rgba(45,50,80,0.3);
+}
+
